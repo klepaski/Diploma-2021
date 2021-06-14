@@ -1,0 +1,9 @@
+.react-datepicker__portal a.react-datepicker__navigation--years-previous,
+.react-datepicker__portal a.react-datepicker__navigation--years-upcoming {
+    border: 0.45rem solid transparent;
+    border-top-color: #ccc;
+}
+.react-datepicker__portal a.react-datepicker__navigation--years-upcoming {
+    border: 0.45rem solid transparent;
+    border-bottom-color: #ccc;
+}

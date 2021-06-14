@@ -1,0 +1,38 @@
+.disabled-all .i_day-picker-row .month-day,
+.disabled-all .i_day-picker-row .prev-month-day,
+.disabled-all .i_day-picker-row .next-month-day {
+    color: rgb(202, 204, 205)!important;
+    background: rgb(255, 255, 255)!important;
+}
+.enabled-all .o_day-picker .i_day-picker-row div.month-day:hover {
+    /*background: #ffffff!important;*/
+    /*color: rgb(85, 85, 85)!important;*/
+}
+.enabled-all .o_day-picker .i_day-picker-row div.month-day.o_selected-day,
+.enabled-all .o_day-picker .i_day-picker-row div.month-day.o_selected-day:hover {
+    color: rgb(202, 204, 205)!important;
+    background: rgb(255, 255, 255)!important;
+    cursor: pointer!important;
+}
+.o_day-picker:focus {
+    outline: none!important;
+}
+.z-calendar-wrapper .o_day-picker .i_day-picker-row [class*="-day"] {
+    font-size: 15px;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.z-wrapper-airnb-calendar {
+    text-align: center;
+}
+.z-wrapper-airnb-calendar .DateRangePicker,
+.z-wrapper-airnb-calendar .DateRangePickerInput {
+    width: 100%;
+}
+
+
+
+
+

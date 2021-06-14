@@ -1,0 +1,11 @@
+@media (min-width: 769px) {
+  .modal-full {
+    width: 50% !important;
+    height: auto !important;
+    top: 20% !important;
+    left: 25% !important;
+  }
+  .modal-full-content {
+    height: auto !important;
+  }
+}

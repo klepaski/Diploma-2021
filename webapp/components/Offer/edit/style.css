@@ -1,0 +1,9 @@
+.cover-wrapper {
+    position: relative;
+    height: 200px;
+
+}
+.cover-wrapper img{
+    max-width: 200px;
+    height: auto;
+}

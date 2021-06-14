@@ -1,0 +1,1585 @@
+{
+  "tags": [
+    {
+      "name": "user"
+    },
+    {
+      "name": "admin"
+    },
+    {
+      "name": "offer"
+    },
+    {
+      "name": "client"
+    }
+  ],
+  "paths": {
+    "/api/v1/user": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "201": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object"
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/profile": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object"
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/auth": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object"
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/{id}/profilePhoto": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "file",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/confirmMail": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/programmer": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/:programmerId/location": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        }
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/client": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/organiser": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operatuion",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "name"
+                  ],
+                  "default": "name"
+                },
+                "description": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "description"
+                  ],
+                  "default": "description"
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/programmerCategories": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        }
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/user/documents": {
+      "get": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "user"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "passport1",
+            "in": "formData",
+            "required": false,
+            "type": "file",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "passport2",
+            "in": "formData",
+            "required": false,
+            "type": "file",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "document1",
+            "in": "formData",
+            "required": false,
+            "type": "file",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "document2",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "country": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "country"
+                  ],
+                  "default": "country"
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/admin/users": {
+      "get": {
+        "tags": [
+          "admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/admin/programmerCategories": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "file",
+            "in": "formData",
+            "required": true,
+            "type": "file",
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/admin/uploadProgrammerCategories": {
+      "post": {
+        "tags": [
+          "admin"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "file",
+            "in": "formData",
+            "required": false,
+            "type": "string",
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer": {
+      "get": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "programmerId": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "organiserId": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "name": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "summary": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "description": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "type": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "numberOfPeople": {
+                  "x-oad-type": "number",
+                  "type": "number",
+                  "format": "float"
+                },
+                "category": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "category"
+                  ],
+                  "default": "category"
+                },
+                "subCategory": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "subCategory"
+                  ],
+                  "default": "subCategory"
+                },
+                "earnings": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "earnings"
+                  ],
+                  "default": "earnings"
+                },
+                "country": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "country"
+                  ],
+                  "default": "country"
+                },
+                "state": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "state"
+                  ],
+                  "default": "state"
+                },
+                "city": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "city"
+                  ],
+                  "default": "city"
+                },
+                "address": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "address"
+                  ],
+                  "default": "address"
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/{id}": {
+      "get": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "put": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "name"
+                  ],
+                  "default": "name"
+                },
+                "summary": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "summary"
+                  ],
+                  "default": "summary"
+                },
+                "description": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "description"
+                  ],
+                  "default": "description"
+                },
+                "type": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "type"
+                  ],
+                  "default": "type"
+                },
+                "category": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "category"
+                  ],
+                  "default": "category"
+                },
+                "subCategory": {
+                  "x-oad-type": "integer",
+                  "type": "integer",
+                  "format": "int32",
+                  "enum": [
+                    "subCategory"
+                  ],
+                  "default": "subCategory"
+                },
+                "earnings": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "earnings"
+                  ],
+                  "default": "earnings"
+                },
+                "country": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "country"
+                  ],
+                  "default": "country"
+                },
+                "state": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "state"
+                  ],
+                  "default": "state"
+                },
+                "city": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "city"
+                  ],
+                  "default": "city"
+                },
+                "address": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "address"
+                  ],
+                  "default": "address"
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/event": {
+      "post": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "offerId": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "numberOfGuests": {
+                  "x-oad-type": "number",
+                  "type": "number",
+                  "format": "float"
+                },
+                "numberOfSets": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "performanceTimeMin": {
+                  "x-oad-type": "number",
+                  "type": "number",
+                  "format": "float"
+                },
+                "timeBetweenSetsMin": {
+                  "x-oad-type": "number",
+                  "type": "number",
+                  "format": "float"
+                },
+                "conditions": {
+                  "x-oad-type": "array",
+                  "type": "array",
+                  "items": {
+                    "x-oad-type": "object",
+                    "type": "object"
+                  }
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/details": {
+      "post": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "offerId",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "description",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "videoUrl",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "earnings",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "file1",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "file2",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "file3",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "file4",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/{id}/details": {
+      "get": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/details/photo": {
+      "get": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "offerId",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "offerId",
+            "in": "formData",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "file1",
+            "in": "formData",
+            "required": true,
+            "type": "file",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "file2",
+            "in": "formData",
+            "required": true,
+            "type": "file",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "file3",
+            "in": "formData",
+            "required": true,
+            "type": "file",
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/details/photo/{id}": {
+      "put": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "offerId": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/{id}/regulations": {
+      "put": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "regulations": {
+                  "x-oad-type": "array",
+                  "type": "array",
+                  "items": {
+                    "x-oad-type": "object",
+                    "type": "object"
+                  }
+                },
+                "details": {
+                  "x-oad-type": "array",
+                  "type": "array",
+                  "items": {
+                    "x-oad-type": "object",
+                    "type": "object"
+                  }
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/{id}/performanceDetails": {
+      "put": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "maxNumberOfActs": {
+                  "x-oad-type": "number",
+                  "type": "number",
+                  "format": "float"
+                },
+                "minNumberOfActs": {
+                  "x-oad-type": "number",
+                  "type": "number",
+                  "format": "float"
+                },
+                "daysBeforeBooking": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                },
+                "timeOpenCalendar": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/{id}/calendar": {
+      "get": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "post": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "array",
+              "type": "array",
+              "items": {
+                "x-oad-type": "object",
+                "type": "object",
+                "properties": {
+                  "availableTimes": {
+                    "x-oad-type": "object",
+                    "type": "object",
+                    "properties": {
+                      "startDate": {
+                        "x-oad-type": "string",
+                        "type": "string",
+                        "enum": [
+                          "2019-08-01 09:22:39.269"
+                        ],
+                        "default": "2019-08-01 09:22:39.269"
+                      },
+                      "endDate": {
+                        "x-oad-type": "string",
+                        "type": "string",
+                        "enum": [
+                          "2019-08-01 09:22:39.269"
+                        ],
+                        "default": "2019-08-01 09:22:39.269"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/{id}/calendar/{calendarId}": {
+      "put": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "startDate": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "2019-08-01 09:22:39.269"
+                  ],
+                  "default": "2019-08-01 09:22:39.269"
+                },
+                "endDate": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "2019-08-01 09:22:39.269"
+                  ],
+                  "default": "2019-08-01 09:22:39.269"
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "calendarId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "delete": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "calendarId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/{eventId}/price": {
+      "put": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "eventId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "typePrice": {
+                  "x-oad-type": "string",
+                  "type": "string",
+                  "enum": [
+                    "adapted",
+                    "fixed"
+                  ],
+                  "default": "fixed"
+                },
+                "pricePerAct": {
+                  "x-oad-type": "number",
+                  "type": "number",
+                  "format": "float"
+                },
+                "currency": {
+                  "x-oad-type": "string",
+                  "type": "string"
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/offer/:id/discounts": {
+      "put": {
+        "tags": [
+          "offer"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "x-oad-type": "object",
+              "type": "object",
+              "properties": {
+                "discounts": {
+                  "x-oad-type": "array",
+                  "type": "array",
+                  "items": {
+                    "x-oad-type": "object",
+                    "type": "object",
+                    "properties": {
+                      "numberDays": {
+                        "x-oad-type": "integer",
+                        "type": "integer",
+                        "format": "int32"
+                      },
+                      "discount": {
+                        "x-oad-type": "number",
+                        "type": "number",
+                        "format": "float"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "x-oad-type": "parameter"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    },
+    "/api/v1/client/offer": {
+      "get": {
+        "tags": [
+          "client"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "x-oad-type": "response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "subCategory",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "city",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "name": "address",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "x-oad-type": "parameter"
+          },
+          {
+            "$ref": "#/parameters/Authorization",
+            "x-oad-type": "reference"
+          }
+        ]
+      },
+      "x-oad-type": "operation"
+    }
+  },
+  "parameters": {
+    "Authorization": {
+      "name": "Authorization",
+      "in": "header",
+      "description": "Bearer token",
+      "required": true,
+      "type": "string",
+      "x-oad-type": "parameter"
+    }
+  },
+  "info": {
+    "title": "programmer-booking",
+    "version": "1.0.0"
+  },
+  "externalDocs": {
+    "url": "http://localhost:3000/"
+  },
+  "host": "127.0.0.1:3000",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "swagger": "2.0"
+}

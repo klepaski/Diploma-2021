@@ -1,0 +1,35 @@
+.listlr-item {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    min-height: 56px;
+    padding: 10px 0;
+}
+.listlr-title {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.listlr-value {
+    color: rgba(1, 1, 1, 0.5);
+    font-size: 18px;
+}
+.z-list-item {
+    display: flex;
+    align-items: center;
+    min-height: 35px;
+}
+.z-list-text {
+    padding-left: 10px;
+}
+.z-list-text.fz-14 {
+    font-size: 14px;
+}
+.ls-type-black {
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+}
+
+

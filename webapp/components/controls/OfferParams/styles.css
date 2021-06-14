@@ -1,0 +1,31 @@
+.z-input-params {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.z-int-params {
+    /*margin-bottom: 20px;*/
+}
+.z-bool-params {
+    /*margin-bottom: 20px;*/
+}
+.z-list-params {
+    margin-top: 10px;
+}
+.z-item-params {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.z-item-params .z-int-params > div,
+.z-item-params .z-bool-params > div {
+    border-bottom: none;
+}
+.z-list-params > div:last-child {
+    margin-bottom: 10px;
+}
+.z-input-params > div:last-child {
+    min-height: auto;
+    height: auto;
+}
+
+
+

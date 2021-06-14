@@ -1,0 +1,57 @@
+#
+# Let's Chat Built-in Defaults
+#
+
+env: development # development / production
+
+appURL: http://localhost:3000
+
+http:
+  enable: true
+  host:
+  port: 3000
+
+https:
+  enable: false
+  host:
+  port: 1558
+
+database:
+  uri: mongodb://localhost/programmer-booking
+
+secrets:
+  cookie: secretsauceERTRFBDVDfbyrgfbdxlwq
+
+files:
+  enable: true
+  provider: local
+  maxFileSize: 100000000
+  restrictTypes: false
+  allowedTypes:
+  - 'image/jpeg'
+  - 'image/png'
+  - 'image/gif'
+  local:
+    dir: uploads
+
+server:
+  secret: fe2a2915a379f3be5394b64d14794943
+  expiresIn: 18000000000
+
+auth:
+  throttling:
+    enable: true
+    threshold: 10
+  providers: [local] # [local, kerberos, ldap] - You can specify the order
+  local:
+    enableRegistration: true
+    passwordRegex: ^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$
+
+facebook:
+  clientID: 322090858721524
+  clientSecret: 5b30ece28ceef5ccd2e4b55fffe18c86
+
+google:
+  clientID: 440064337633-n6chddopmgtae5j6kv245bn8rq5erf6b.apps.googleusercontent.com
+  clientSecret: RlGg1a-1y2epa86Q3kAKqeDT
+

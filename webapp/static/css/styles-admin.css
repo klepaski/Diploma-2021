@@ -1,0 +1,118 @@
+.z-wrap-admin {
+    padding: 20px
+}
+.z-custom-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.z-custom-table-header {
+    display: flex;
+    min-height: 50px;
+    background: rgba(45, 156, 219, 0.1);
+}
+.z-custom-table-row {
+    display: flex;
+    min-height: 50px;
+    border-bottom: 1px solid #E2EAF4;
+
+}
+.z-custom-table-row > div {
+    color: rgba(0, 0, 0, 0.89) !important;
+}
+.z-custom-table-header,
+.z-custom-table-row{
+    width: 1250px;
+}
+.z-custom-table-header > div,
+.z-custom-table-row > div {
+    padding-left: 10px;
+    min-width: 80px;
+    text-align: center;
+    color: #A6B2C3;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #E2EAF4;
+}
+
+.z-custom-table-column-1 {
+    min-width: 250px!important;
+}
+.z-custom-table-column-2 {
+    min-width: 150px!important;
+}
+.z-custom-table-column-3 {
+    min-width: 700px!important;
+    width: 700px;
+}
+
+.modal-params {
+    width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+.mp-wrap {
+    padding: 10px 30px 30px 30px;
+}
+.mp-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.mp-label {
+    font-size: 13px;
+    color: grey;
+}
+
+.mp-footer {
+    margin-top: 40px;
+    text-align: right;
+}
+.mp-footer button {
+    margin-left: 10px;
+}
+.mp-content {
+    max-height: 500px;
+    overflow-y: auto;
+}
+.flex-list-params {
+    display: flex;
+    width: 100%;
+}
+
+.flex-list-params > div {
+    width: 30%;
+}
+.a-for-checkbox {
+    text-align: center;
+}
+.a-for-checkbox div {
+    justify-content: center;
+}
+.mp-params-list-item {
+    border-bottom: 1px solid grey;
+    padding: 5px 0;
+}
+.mp-params-list-item-title {
+    margin-bottom: 5px;
+}
+.z-custom-table-column-3-fix {
+    flex-direction: column;
+    justify-content: flex-start!important;
+}
+.z-a-param {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+}
+.z-a-param-item-1 {
+    min-width: 400px;
+    width: 400px;
+    text-align: left;
+}
+.z-a-param-item-2 {
+     min-width: 100px;
+     width: 100px;
+ }
